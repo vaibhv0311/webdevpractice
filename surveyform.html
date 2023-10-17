@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form Test</h1>
+    <p id="description">This survey form is to test the learnings of the basics of html and CSS</p>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name" />
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Enter your email" />
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age (Optional)</label>
+            <input type="number" name="number" id="number" min="18" max="80" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+            <label id="dropdown-label" for="dropdown">What is your current role?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="">(Select your role)</option>
+                <option value="1">Student</option>
+                <option value="2">Software Engineer</option>
+                <option value="3">Teacher</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <legend>Would you recommend us to your friends?</legend>
+            <label for="radio"><input type="radio" name="radio" value="definitely" id="radio">Definitely</label>
+            <label for="radio"><input type="radio" name="radio" value="maybe" id="radio">Maybe</label>
+            <label for="radio"><input type="radio" name="radio" id="radio" value="no">Not sure</label>
+        </div>
+        <div class="form-group">
+            <legend>What is your work experience?</legend>
+            <input type="checkbox" name="value1" id="value1" value="value1">
+            <label for="checkboxes">0-1 years</label>
+            <input type="checkbox" name="value1" id="value1" value="value1">
+            <label for="checkboxes">2-3 years</label>
+            <input type="checkbox" name="value1" id="value1" value="value1">
+            <label for="checkboxes">3-4 years</label>
+            <input type="checkbox" name="value1" id="value1" value="value1">
+            <label for="checkboxes">4-5 years</label>
+            <input type="checkbox" name="value1" id="value1" value="value1">
+            <label for="checkboxes">5+ years</label>
+        </div>
+        <div class="form-group">
+            <legend>Any other Questions or comments you have</legend>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" id="submit" name="submit">Submit</button>
+
+
+
+    </form>
+
+</body>
+
+</html>
